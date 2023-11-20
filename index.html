@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <title>NEW YORK</title>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="w3-container w3-center w3-padding-24">
+    <h1>NEW YORK</h1>
+  </header>
+
+  <!-- Contenido Principal -->
+  <div class="w3-content w3-padding">
+
+    <!-- Cuadrícula de Fotos -->
+    <div class="w3-row">
+      <div class="w3-half">
+        <img src="PIC1.jpg" class="w3-image" alt="Foto 1" onmouseover="changeBackgroundColor()" onmouseout="restoreBackgroundColor()">
+    
+      </div>
+
+      <div class="w3-half">
+        <img src="PIC2.jpg" class="w3-image" alt="Foto 2" onmouseover="changeBackgroundColor()" onmouseout="restoreBackgroundColor()">
+     
+      </div>
+    </div>
+
+ <!-- Texto Descriptivo -->
+ <div class="w3-container w3-padding">
+    <p>Nueva York, conocida como la Gran Manzana, es una ciudad con una rica historia que se remonta al siglo XVII. Fundada por colonizadores neerlandeses en 1624, la ciudad comenzó como un pequeño puesto comercial llamado Nueva Ámsterdam. Sin embargo, en 1664, la colonia fue capturada por los ingleses y rebautizada como Nueva York en honor al Duque de York.</p>
+
+  <p>A lo largo de los siglos, Nueva York se convirtió en un crisol de culturas y una puerta de entrada para millones de inmigrantes que buscaban una vida mejor en Estados Unidos. La Estatua de la Libertad, un regalo de Francia en 1886, se erige como un símbolo de la libertad y la oportunidad que la ciudad ofrece a aquellos que llegan a sus costas.</p>
+
+  <p>Nueva York ha sido testigo de momentos cruciales en la historia de Estados Unidos, desde la Revolución Americana hasta los eventos del 11 de septiembre de 2001. La ciudad ha enfrentado desafíos y conflictos, pero ha demostrado una notable resiliencia y determinación.</p>
+
+  <p>Hoy en día, Nueva York es una metrópolis vibrante que alberga algunos de los puntos de referencia más famosos del mundo, como Times Square, Central Park y Broadway. Su energía única, diversidad y cultura la convierten en una de las ciudades más fascinantes del planeta.</p>
+  
+  </div>
+
+
+  
+  <script>
+    function changeBackgroundColor() {
+      document.body.classList.add('hovered');
+    }
+
+    function restoreBackgroundColor() {
+      document.body.classList.remove('hovered');
+    }
+  </script>
+
+  <!-- Sección de Formulario -->
+<div class="w3-container w3-padding">
+    <h2>¿Tienes información o algo que agregar? Cuéntanos</h2>
+    <p>Estamos encantados de recibir tus comentarios y sugerencias. Por favor, completa el formulario a continuación:</p>
+  
+    <!-- Formulario de Contacto -->
+    <form id="contactForm" action="/tu-script-de-procesamiento" method="post">
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px;">
+        <div class="w3-half">
+          <label>Nombre</label>
+          <input class="w3-input w3-border" type="text" name="nombre" required>
+        </div>
+        <div class="w3-half">
+          <label>Correo Electrónico</label>
+          <input class="w3-input w3-border" type="email" name="correo" required>
+        </div>
+      </div>
+      <label>Mensaje</label>
+      <textarea class="w3-input w3-border" name="mensaje" rows="4" required></textarea>
+      <button type="submit" class="w3-button w3-dark-grey w3-margin-top">Enviar</button>
+    </form>
+  </div>
+  
+</body>
+</html>

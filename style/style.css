@@ -1,0 +1,93 @@
+
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255); 
+}
+
+.w3-container {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.w3-container h1 {
+  margin: 20px 0;
+  letter-spacing: 10px;
+}
+
+
+.w3-content {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+
+.w3-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.w3-half {
+  flex: 1;
+  box-sizing: border-box;
+  margin: 0%;
+}
+
+.w3-image {
+  width: 90%;
+  height: auto;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.w3-half:hover .w3-image {
+  transform: scale(1.1);
+}
+
+body.hovered {
+  background-color: rgb(5, 5, 5);
+  transition: background-color 0.4s ease;
+}
+
+/* Estilo para la Sección de Formulario */
+.w3-container form {
+  max-width: 600px;
+  margin: auto;
+  text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilo para los Campos del Formulario */
+.w3-half {
+  width: 48%;
+  margin-right: 4%;
+  margin-bottom: 16px;
+  display: inline-block; /* Cambiado a inline-block para centrar */
+}
+
+/* Estilo para el Botón de Enviar */
+.w3-button {
+  display: block;
+  margin: auto; /* Centrar el botón */
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.w3-button:hover {
+  background-color: #555;
+}
+
+/* Estilo para el Contenedor de Comentarios */
+.w3-container p {
+  margin-bottom: 16px;
+}
